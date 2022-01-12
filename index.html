@@ -230,13 +230,13 @@
         </p>
         <div class="slide-wrapper">
           <div class="slider-controls ">
-            <button class="slider-button current" type="button">Доставка</button>
-            <button class="slider-button" type="button">Гарантия</button>
-            <button class="slider-button" type="button">Кредит</button>
+            <button data-id="delivery" class="slider-button js-btn current" type="button">Доставка</button>
+            <button data-id="guarantee" class="slider-button js-btn" type="button">Гарантия</button>
+            <button data-id="credit" class="slider-button js-btn" type="button">Кредит</button>
           </div>
           <img class="stick" src="img/slider/stick.png" width="10" height="279" alt="stick">
             <ul class="slider-list list-style">
-              <li class="slider-item slide slide-current">
+              <li id="delivery" class="slider-item slide slide-current">
                  <div>
                    <h3 class="title title-blue slide-title">Доставка</h3>
                    <p class="services-text delivery-decription">Мы с удовольствием доставим ваш товар прямо
@@ -246,14 +246,14 @@
                  </div>
                  <img src="img/services/car.png" width="468" height="261" alt="изображение грузовика">
               </li>
-              <li class="slider-item slide ">
+              <li id="guarantee" class="slider-item slide ">
                 <div>
                   <h3 class="title title-blue slide-title">Гарантия</h3>
                   <p class="services-text guarantee-description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
                 </div>
                 <img src="img/services/medal.png" width="389" height="283" alt="изображение медали">
               </li>
-              <li class="slider-item slide">
+              <li id="credit" class="slider-item slide">
                 <div>
                   <h3 class="title title-blue slide-title">Кредит</h3>
                   <p class="services-text kredit-description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
@@ -262,7 +262,7 @@
                 <img src="img/services/money.png" width="465" height="285" alt="изображение денег">
               </li>
             </ul>
-            </div>
+        </div>
     </div>
   </section>
 
@@ -391,5 +391,6 @@
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 
+<script src="js/js.js"></script>
 </body>
 </html>
