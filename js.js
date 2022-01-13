@@ -16,7 +16,6 @@ tabs.onclick = e => {
     });
 
     const element = document.getElementById(id);
-    console.log(element)
     element.classList.add("slide-current");
   }
 }
